@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using tripTracker.BackService.Data;
 using tripTracker.BackService.Models;
+using TripTracker.BackService.Data;
 
 namespace tripTracker.BackService.Controllers
 {
