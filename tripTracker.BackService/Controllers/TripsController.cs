@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using tripTracker.BackService.Models;
 using TripTracker.BackService.Data;
+using TripTracker.BackService.Models;
 
 namespace tripTracker.BackService.Controllers
 {

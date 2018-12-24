@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace tripTracker.BackService.Models
+namespace TripTracker.BackService.Models
 {
     public class Trip
     {
