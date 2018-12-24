@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
-using tripTracker.BackService.Models;
+using TripTracker.BackService.Models;
 
 namespace TripTracker.BackService.Data
 {

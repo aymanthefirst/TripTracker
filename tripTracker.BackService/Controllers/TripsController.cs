@@ -4,8 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using tripTracker.BackService.Data;
 using tripTracker.BackService.Models;
+using TripTracker.BackService.Data;
+using TripTracker.BackService.Models;
+using tripTrackerDTO;
 
 namespace tripTracker.BackService.Controllers
 {
@@ -29,15 +31,32 @@ namespace tripTracker.BackService.Controllers
         {
             var trips = await _context.Trips
                 .AsNoTracking()
+                .Include(t => t.Segments)
+                .Select(t => new TripWithSegments
+                {
+                    Id = t.Id,
+                    Name = t.Name,
+                    StartDate = t.StartDate,
+                    EndDate = t.EndDate,
+                    Segments = t.Segments.ToList<TripTrackerDTO.Segment>()
+                })
                 .ToListAsync();
             return Ok(trips);
         }
 
         // GET api/Trips/5
         [HttpGet("{id}")]
-        public Trip Get(int id)
+        public TripWithSegments Get(int id)
         {
-            return _context.Trips.Find(id);
+            return _context.Trips
+                .Select(t => new TripWithSegments
+                {
+                    Id = t.Id,
+                    Name = t.Name,
+                    StartDate = t.StartDate,
+                    EndDate = t.EndDate,
+                    Segments = t.Segments.ToList<TripTrackerDTO.Segment>()
+                }).SingleOrDefault(t => t.Id == id);
         }
 
         // POST api/Trips
