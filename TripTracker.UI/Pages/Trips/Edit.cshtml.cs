@@ -6,10 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using TripTracker.BackService.Models;
 using TripTracker.UI.Data;
-using tripTracker.BackService.Models;
 
-namespace TripTracker.UI.Pages.Account.Trips
+namespace TripTracker.UI.Pages.Accounts.Trips
 {
     public class EditModel : PageModel
     {

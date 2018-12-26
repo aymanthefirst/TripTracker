@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <UserSecretsId>aspnet-TripTracker.UI-33A9A01F-6F03-44AB-B509-6112AA2FBA9C</UserSecretsId>
+    <UserSecretsId>aspnet-TripTracker-43B75C7F-FD9E-4393-9776-CB5EBD8E2D67</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Accounts\" />
+    <Folder Include="Pages\Accounts\Trips\" />
   </ItemGroup>
 
 </Project>

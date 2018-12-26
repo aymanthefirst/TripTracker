@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripTracker.BackService", "tripTracker.BackService\TripTracker.BackService.csproj", "{F3660D4C-EC39-4667-A040-1B9753415189}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripTracker.UI", "TripTracker.UI\TripTracker.UI.csproj", "{55FB35CD-345C-485C-BC61-0F8281083B0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F3660D4C-EC39-4667-A040-1B9753415189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3660D4C-EC39-4667-A040-1B9753415189}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3660D4C-EC39-4667-A040-1B9753415189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55FB35CD-345C-485C-BC61-0F8281083B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FB35CD-345C-485C-BC61-0F8281083B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FB35CD-345C-485C-BC61-0F8281083B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FB35CD-345C-485C-BC61-0F8281083B0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

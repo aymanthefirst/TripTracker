@@ -12,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using TripTracker.UI.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Net.Http;
+using TripTracker.UI.Services;
 
 namespace TripTracker.UI
 {
@@ -39,6 +41,17 @@ namespace TripTracker.UI
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            #region API Client Configuration
+            services.AddScoped(_ =>
+            new HttpClient
+            {
+                BaseAddress = new Uri(Configuration["serviceUrl"])
+            });
+            services.AddScoped<IApiClient, ApiClient>();
+            #endregion
+
+
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
