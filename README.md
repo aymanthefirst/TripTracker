@@ -8,7 +8,7 @@ GET, PUT, MODIFY and DELETE requests to the server have been tested and work suc
 The user interface needs to be created. 
 
 # Technology
-Visual studio
-C#
-ASP.net
-MVC model
+Visual studio.
+C#.
+ASP.net.
+MVC model.
